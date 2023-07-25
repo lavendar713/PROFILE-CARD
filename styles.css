@@ -1,0 +1,109 @@
+body { 
+    min-height: 100vh;
+    width: 100%;
+    font-family: "Kumbh Sans";
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat, no-repeat;
+    background-image: url(bg-pattern-top.svg), url(bg-pattern-bottom.svg);
+    background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+    background-color:  hsl(185, 75%, 39%);
+}
+
+main {
+    background: white;
+    width: 330px;
+    border-radius: 13px;
+    position: relative;
+    box-shadow: 0 3px 30px 0 #108fa5, 0 25px 50px 0 #1E99A6;
+}
+
+img.pattern-card { 
+    width: 100%;
+    height: 135px;
+    border-radius: 13px 13px 0 0;
+}
+
+.profile-pic img { 
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    position: absolute;
+    top: 22.5%;
+    left: 36%;
+}
+
+section {
+    text-align: center;
+    padding-top: 60px;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-right: 9px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+span {
+    font-size: 20px;
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+    font-size: 17px;
+}
+
+p {
+    margin-top: 6px;
+    color: hsl(0, 0%, 50%);
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top-color: hsl(0, 0%, 90%);
+    border-top-width: 0.5px ;
+    border-style: solid;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding: 15px 15px;
+}
+
+.stats h2 {
+    margin-bottom: 5px;
+    color: hsl(229, 23%, 23%);
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.stats p {
+    display: block;
+    color: hsl(0, 0%, 59%);
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-top: 0;
+    margin-bottom: 7px;
+}
+
+@media screen and (min-width: 1500px) {
+    body {
+        background-position: right 66vw bottom 53vh, left 71vw top 65vh;
+    }    
+}
